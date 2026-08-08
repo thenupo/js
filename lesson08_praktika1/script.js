@@ -23,22 +23,22 @@
 
 'use strict';
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');  // создаем переменную numberOfFilms и помещаем в нее ответ пользователя на вопрос, унарный плюс перед prompt преобразует строку в число
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+const personalMovieDB = {  // создаем объект personalMovieDB и помещаем в него свойства
+    count: numberOfFilms,  // count - сюда передается ответ на первый вопрос
+    movies: {},  // movies - в это свойство помещаем пустой объект
+    actors: {},  // actors - тоже помещаем пустой объект
+    genres: [],  // genres - сюда помещаем пустой массив
+    privat: false  // privat - в это свойство помещаем boolean(логическое) значение false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?'),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?');
+const a = prompt('Один из последних просмотренных фильмов?', ''),  // задаем пользователю вопрос и помещаем ответ в переменную a
+      b = prompt('На сколько оцените его?'),  // задаем пользователю вопрос и помещаем ответ в переменную b
+      c = prompt('Один из последних просмотренных фильмов?', ''),  // задаем пользователю вопрос и помещаем ответ в переменную c
+      d = prompt('На сколько оцените его?');  // задаем пользователю вопрос и помещаем ответ в переменную d
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+personalMovieDB.movies[a] = b;  // записываем ответы в объект movies в формате: movies: { 'logan': '8.1' }
+personalMovieDB.movies[c] = d;  // по аналогии записываем второй фильм и его оценку
 
-console.log(personalMovieDB);
+console.log(personalMovieDB);  // выводим объект personalMovieDB в консоль для проверки, чтобы все работало без ошибок
