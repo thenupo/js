@@ -1,4 +1,1 @@
-const isChecked = false,
-      isClose = false;
-
-console.log(isChecked || !isClose);
+console.log(4 + " - object");

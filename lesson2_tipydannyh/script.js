@@ -1,30 +1,34 @@
 "use strict";
 
-let number = 4.6;
+/////////////  ТИПЫ ДАННЫХ в JavaScript ///////////////
 
-console.log(-4/0);
-console.log('string' * 9);
+let number = 4.6;  //можно хранить как целые числа, так и дробные
 
-const persone = 'Alex'; 
+console.log(-4/0);  // тут будет -Infinity, это особое значение в JS, которое обозначает отрицательную бесконечность
+console.log('string' * 9);  // тут будет NaN, это особое значение в JS, которое обозначает не число
 
-const bool = false;
+const persone = 'Alex';  // строка
 
-//console.log(something);
+const bool = false;  // булевое значение
+
+console.log(something);  // в консоли будет ошибка, так как переменная не определена
 
 let und;
-console.log(und);
+console.log(und);  // тут будет undefined, так как переменная определена, но не имеет значения
+
 
 const obj = {
     name: "John",
     age: 25,
     isMarried: false
-};
+};  // объект, который хранит данные в парном формате
 
-// console.log(obj.name);
-console.log(obj["name"]);
+console.log(obj.name);  // выводим значение свойства name объекта obj
+console.log(obj["name"]);  // второй способ обращения к свойству объекта
 
-let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];
-console.log(arr[1]);
+
+let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];  // массив, который хранит данные по порядку
+console.log(arr[1]);  // выводим значение элемента массива по индексу 1
 
 
 // ------------------------------------------------------------------------
@@ -49,11 +53,13 @@ const arrObj = {
 };
 const b = 'b';
 
-// arrObj.b = '1234';
+console.log(arrObj[1]);  // выводим значение свойства объекта arrObj по ключу 1
+
+arrObj.b = '1234';  // способ добавления нового свойства в объект arrObj с ключом 'b' и значением '1234'
 arrObj['b'] = '1234';
 
-console.log(arrObj['b']);
-console.log(arrObj.b);
+console.log(arrObj['b']);  // выводим значение свойства объекта arrObj по ключу 'b'
+console.log(arrObj.b);  // второй способ вывода значения свойства объекта arrObj по ключу 'b'
 
 
 // const objj = {a: 1, b:2};  // Структура хранения данных в парном формате
@@ -61,3 +67,4 @@ const objj = {
     Anna: 500,
     'Alice': 800
 };
+

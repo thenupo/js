@@ -1,18 +1,19 @@
 "use strict";
 
-// alert('Hello');
+alert('Hello');  // Команда alert выводит сообщение в модальном окне
 
-// const result = confirm("Are you here?") 
-// console.log(result)  
+const result = confirm("Are you here?"); // Команда confirm выводит сообщение в модальном окне с кнопками "ОК" и "Отмена". Возвращает true или false в зависимости от нажатой кнопки
+console.log(result);   
 
-// const answer = +prompt("Вам есть 18?");
-// console.log(answer + 5);  
+const answer = +prompt("Вам есть 18?");  // Команда prompt выводит сообщение в модальном окне с полем для ввода текста. Возвращает введённый текст или null, если пользователь нажал "Отмена". В данном случае мы используем унарный плюс (+) перед prompt, чтобы преобразовать введённое значение в число.
+console.log(answer + 5);  
 
-const answers = [];
 
-answers[0] = prompt('Как ваше имя?', '');
-answers[1] = prompt('Как ваше фамилия?', '');
-answers[2] = prompt('Сколько вам лет?', '');
+const answers = [];  // Создаём пустой массив answers, в который будем записывать ответы пользователя
 
-console.log(typeof(answers)); 
-console.log(typeof(null));
+answers[0] = prompt('Как ваше имя?', '');  // Записываем ответ пользователя на вопрос "Как ваше имя?" в первый элемент массива answers
+answers[1] = prompt('Как ваше фамилия?', '');  // Записываем ответ пользователя на вопрос "Как ваше фамилия?" во второй элемент массива answers
+answers[2] = prompt('Сколько вам лет?', '');  // Записываем ответ пользователя на вопрос "Сколько вам лет?" в третий элемент массива answers
+
+console.log(typeof(answers));  // Выводим в консоль тип данных переменной answers. В данном случае это будет "object", так как массивы в JavaScript являются объектами.
+console.log(typeof(null));  // Выводим в консоль тип данных null. В JavaScript null является примитивным типом данных, но typeof(null) возвращает "object" из-за исторической ошибки в языке.
