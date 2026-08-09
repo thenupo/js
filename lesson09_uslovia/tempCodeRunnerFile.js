@@ -7,7 +7,7 @@ switch (num) {
     case 100:
         console.log('Неверно');
         break;
-    case 51:
+    case 50:
         console.log('В точку!');
         break;
     default:
