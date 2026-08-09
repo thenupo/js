@@ -1,7 +1,7 @@
-const arrayOfNumbers = [];
+let result = '';
 
-    for (let i = 5; i < 11; i++) {
-        arrayOfNumbers[i - 5] = i;
-    }
+for (let i = 1; i < 6; i++) {
 
-    console.log(arrayOfNumbers);
+    console.log(result += '*');
+
+}
