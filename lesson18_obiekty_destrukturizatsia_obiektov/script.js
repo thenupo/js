@@ -8,14 +8,14 @@ const options = {
         border: 'black',
         bg: 'red'
     },
-    makeTest: function() {
+    makeTest: function() {      // объекттің ішіндегі функция бұны метод деп атайды
         console.log('Test');
     }
 };
 
-options.makeTest();
+options.makeTest();     // объекттің ішіндегі методты яғни функцияны шақыру үлгісі ()
 
-const {border, bg} = options.colors;
+const {border, bg} = options.colors;    // деструктуризация - ягни объекттің ішіндегі ключтің значениесін алудың тәсілі
 console.log(border);
 
 // console.log(Object.keys(options).length);  // объекттті массивке айналдырып ішінде қанша ключ бар екенін білуге болады
