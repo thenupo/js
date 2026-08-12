@@ -1,8 +1,8 @@
-for (let i = 1; i < 8; i++) {
-    if (i === 6) {
-        break;
-        // continue;
-    }
-
-    console.log(i);
+let number = 1234;
+let sum = 0;
+while (number > 0) {
+    let digit = number % 10;
+    sum = sum + digit;
+    number = Math.floor(number / 10);
 }
+console.log(sum);
