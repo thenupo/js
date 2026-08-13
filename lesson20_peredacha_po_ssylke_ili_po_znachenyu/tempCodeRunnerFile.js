@@ -1,9 +1,32 @@
-const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    },
+    showAgeAndLangs: function(plan) {
+        const {age} = plan;
+        const {languages} = plan.skills;
+        let str = `Мне ${age} и я владею языками: `;
 
-function standardizeStrings(arr) {
-    arr.forEach(city => {
-        console.log(city.toLowerCase())
-    })
+        languages.forEach(function(lang) {
+            str += `${lang.toUpperCase()} `;
+        });
+
+        return str;
+    }
+};
+
+//console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
+
+function showExperience(plan) {
+    const {exp} = plan.skills;
+    return exp;
 }
 
-standardizeStrings(favoriteCities);
+showExperience(personalPlanPeter);

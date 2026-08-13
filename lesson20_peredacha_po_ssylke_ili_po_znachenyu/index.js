@@ -131,7 +131,12 @@ const personalPlanPeter = {
 
 console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
 
+function showExperience(plan) {
+    const {exp} = plan.skills;
+    return exp;
+}
 
+showExperience(personalPlanPeter);
 
 function showProgrammingLangs(plan) {
     let str = '';
