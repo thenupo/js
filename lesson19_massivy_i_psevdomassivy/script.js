@@ -12,20 +12,20 @@ function compareNum(a, b) {
 console.log(arr.length);
 console.log(arr); */
 
-/* arr.forEach(function(item, i, arr) {
+/* arr.forEach(function(item, i, arr) {                     // перебор массива по каждому элементу
     console.log(`${i}: ${item} внутри массива ${arr}`);
 }); */
 
-// arr.pop();
-// arr.push(10);
+arr.pop();      // удаляет последний элемент в массиве
+arr.push(10);   // добавляет элемент в конец массива в этом случае элемент 10
 
 // console.log(arr);
 
-/* for (let i = 0; i < arr.length; i++) {
+/* for (let i = 0; i < arr.length; i++) {   // перебрать элементы массива с помощью цикла
     console.log(arr[i]);
 } */
 
-/* for (let value of arr) {
+/* for (let value of arr) {         // перебрать элементы массива с помощью конструкции for of
     console.log(value)
 } */
 
