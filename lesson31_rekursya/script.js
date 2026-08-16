@@ -1,4 +1,6 @@
-function pow(x, n) {
+// пример возведение в степень без рекурсии
+
+function pow(x, n) {            
     let result = 1;
 
     for (let i = 0; i < n; i++) {
@@ -8,6 +10,7 @@ function pow(x, n) {
     return result;
 }
 
+// пример возведение в степень с рекурсией
 function pow(x, n) {
     if (n === 1) {
         return x;
@@ -25,6 +28,7 @@ console.log(pow(2, 3)); // 8
 console.log(pow(2, 4)); // 16
 
 
+// тут у нас объект с двумя ключами js и html и внутри этого объекта мы храним данные по каждому курсу
 let students = {
     js: [{
         name: 'John',
@@ -48,13 +52,16 @@ let students = {
             progress: 10
         }],
 
-        semi: [{
-            name: 'Test',
-            progress: 100
-        }]
+        semi: { 
+            students: [{
+                name: 'Test',
+                progress: 100
+            }]
+        }
     }
 };
 
+// пример решения задачи на итерацию без рекурсии
 function getTotalProgressByIteration(data) {
     let total = 0;
     let students = 0;
@@ -83,6 +90,7 @@ function getTotalProgressByIteration(data) {
 // console.log(getTotalProgressByIteration(students));
 
 
+// пример решения задачи на рекурсию с объектами
 function getTotalProgressByRecursion(data) {
     if (Array.isArray(data)) {
         let total = 0;
